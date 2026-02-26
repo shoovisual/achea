@@ -18,7 +18,7 @@
                                 <a target="_blank" rel="noopener" href="https://www.instagram.com/"><i class="fa fa-instagram"></i></a>
                             </div>
                             <!-- Header Quote Button -->
-                            <a href="contact.html" class="get-quote">get a qoute</a>
+                            <a href="{{ route('contact') }}" class="get-quote">get a quote</a>
                         </div>
                     </div>
                 </div>
@@ -30,7 +30,7 @@
                     <div class="row">
                         <!-- Logo -->
                         <div class="header-logo col align-self-center">
-                            <a class="logo" href="index.html">
+                            <a class="logo" href="{{ route('home') }}">
                                 <img src="{{ asset('img/logo.png') }}" alt="Image">
                             </a>
                         </div>
@@ -38,10 +38,11 @@
                         <div id="main-menu" class="main-menu col-auto d-none d-lg-block">
                             <nav>
                                 <ul>
-                                    <li><a href="{{ route('home') }}">home</a></li>
-                                    <li><a href="{{ route('about') }}">about</a></li>
-                                    <li><a href="project.html">project</a></li></li>
-                                    <li><a href="contact.html">contact</a></li>
+                                    <li><a href="{{ route('home') }}">HOME</a></li>
+                                    <li><a href="{{ route('about') }}">ABOUT US</a></li>
+                                    <li><a href="#">PROGRAM</a></li>
+                                    <li><a href="#">PROJECTS</a></li>
+                                    <li><a href="{{ route('contact') }}">CONTACT US</a></li>
                                 </ul>
                             </nav>
                         </div>

@@ -84,8 +84,8 @@
             <div class="container">
                 <!-- Copyright -->
                 <div class="copyright text-center">
-                    <p>© 2022 Green Soul. Made with <i class="fa fa-heart heart-icon"></i> By <a target="_blank"
-                            href="https://hasthemes.com/">HasThemes</a></p>
+                    <p>Copyright &copy; {{ date('Y') }} ACHEA. Developed by <i class="fa fa-heart heart-icon"></i> By <a target="_blank"
+                            href="https://shoovisual.com/">Shoovisual</a></p>
                 </div>
             </div>
         </div>

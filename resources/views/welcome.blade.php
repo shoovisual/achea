@@ -4,13 +4,17 @@
         <div id="hero-area" class="hero-area section">
             <div class="hero-image-bg" style="background-image: url('{{ asset('img/hero/1.jpg') }}');">
                 <div class="hero-caption">
-                    <div class="container">
+                    <div class="container p-5">
                         <div class="row">
                             <!-- Hero Content -->
                             <div class="hero-content col-12">
-                                <h1 class="wow cusFadeInRight" data-wow-duration=".5s" data-wow-delay="0.5s">Building Africa’s Resilience <br>at the Nexus of Climate, Health, and Environment</h1>
-                                <p class="wow cusFadeInRight" data-wow-duration=".5s" data-wow-delay="1s">ACHEA champions integrated, community-led solutions to the interconnected crises of climate change, environmental degradation, and public health across Africa. We believe that climate, health, and the environment are inseparable—and lasting solutions must address them together.</p>
-                                <a href="#" class="learn-more wow cusFadeInRight" data-wow-duration=".5s" data-wow-delay="1.5s">Learn More</a>
+                                <div class="row">
+                                    <div class="col-lg-9">
+                                        <h1 class="wow cusFadeInRight fw-medium" data-wow-duration=".5s" data-wow-delay="0.5s">Building Africa’s Climate, Health & Environmental Resilience</h1>
+                                        <p class="wow cusFadeInRight" data-wow-duration=".5s" data-wow-delay="1s">ACHEA champions integrated solutions to address Africa's interconnected crises of climate change, environmental degradation, and public health.</p>
+                                        <a href="#" class="learn-more wow cusFadeInRight text-white" data-wow-duration=".5s" data-wow-delay="1.5s">Learn More</a>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -59,14 +63,18 @@
             <div class="container">
                 <div class="row">
                     <!--  About Content  -->
-                    <div class="about-content col-lg-6 col-12 ms-auto pt-110 pb-110">
+                    <div class="about-content col-lg-6 col-12 ms-auto py-20">
                         <h2>ABOUT US</h2>
-                        <h1 style="font-size: 30px; line-height: 1.2;">African Climate, Health & Environmental Actions (ACHEA)</h1>
-                        <p>ACHEA is a pan-African initiative working at the intersection of climate action, maternal and neonatal health, and environmental sustainability.</p>
-                        <p>Our mission is to integrate climate-smart solutions into health systems while promoting planetary health and community resilience. We recognize that climate change exacerbates health risks, particularly for mothers and newborns, while environmental degradation undermines livelihoods and wellbeing.</p>
-                        <p>ACHEA responds through innovation, collaboration, and community-led action—ensuring that Africa’s most vulnerable populations are not left behind.</p>
-                        <a href="#" class="button white">JOIN NOW</a>
-                        <a href="#" class="button">view details</a>
+                        <div class="text-white">
+                            <h1>African Climate, Health & Environmental Actions (ACHEA)</h1>
+                            <p>ACHEA is a pan-African initiative working at the intersection of climate action, maternal and neonatal health, and environmental sustainability.</p>
+                            <p>Our mission is to integrate climate-smart solutions into health systems while promoting planetary health and community resilience. We recognize that climate change exacerbates health risks, particularly for mothers and newborns, while environmental degradation undermines livelihoods and wellbeing.</p>
+                            <p>ACHEA responds through innovation, collaboration, and community-led action—ensuring that Africa’s most vulnerable populations are not left behind.</p>
+                        </div>
+                        <div>
+                            <a href="#" class="button white">JOIN NOW</a>
+                            <a href="#" class="button class="text-white"">view details</a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -272,54 +280,9 @@
             </div>
         </div>
         <!-- Causes Area End -->
-        <!-- FunFact Area Start -->
-        <div id="funfact-area" class="funfact-area section pt-120 pb-100">
-            <div class="container">
-                <!-- Section Title -->
-                <div class="row">
-                    <div class="section-title text-center col-12 mb-80">
-                        <h2>SOME FACTS</h2>
-                        <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin
-                            literature from 45 BC, making it over 2000 years old.</p>
-                    </div>
-                </div>
-                <div class="row justify-content-center">
-                    <div class="d-flex justify-content-center flex-wrap col-auto">
-                        <!--  Single Fact  -->
-                        <div class="single-fact">
-                            <img src="img/funfact/1.png" alt="Image">
-                            <span class="border"></span>
-                            <h1><span class="counter">54514</span></h1>
-                            <p>PROJECTS</p>
-                        </div>
-                        <!--  Single Fact  -->
-                        <div class="single-fact">
-                            <img src="img/funfact/2.png" alt="Image">
-                            <span class="border"></span>
-                            <h1>$<span class="counter">58785</span></h1>
-                            <p>DONATIONS</p>
-                        </div>
-                        <!--  Single Fact  -->
-                        <div class="single-fact">
-                            <img src="img/funfact/3.png" alt="Image">
-                            <span class="border"></span>
-                            <h1>$<span class="counter">28785</span></h1>
-                            <p>RAISED</p>
-                        </div>
-                        <!--  Single Fact  -->
-                        <div class="single-fact">
-                            <img src="img/funfact/4.png" alt="Image">
-                            <span class="border"></span>
-                            <h1><span class="counter">504</span></h1>
-                            <p>DONATORS</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- FunFact Area End -->
+        @include('components.facts')
         <!-- Video Area Start -->
-        <div id="video-area" class="video-area section overlay pt-150 pb-150">
+        {{-- <div id="video-area" class="video-area section overlay pt-150 pb-150">
             <div class="container">
                 <div class="row">
                     <!--  Video Wrapper  -->
@@ -332,7 +295,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> --}}
         <!-- Video Area End -->
         <!-- Event Gallery Area Start -->
         <div id="event-gallery-area" class="event-gallery-area section pt-120 pb-70">
@@ -428,29 +391,7 @@
                         <p>Our partnership approach focuses on shared goals, local ownership, and evidence-based interventions that strengthen health systems, protect the environment, and improve lives across Africa.</p>
                     </div>
                 </div>
-                <!--  Client Slider  -->
-                <div class="client-slider row">
-                    <!--  Client Item  -->
-                    <div class="client-item col-12"><img src="img/clients/1.png" alt="Image"></div>
-                    <!--  Client Item  -->
-                    <div class="client-item col-12"><img src="img/clients/2.png" alt="Image"></div>
-                    <!--  Client Item  -->
-                    <div class="client-item col-12"><img src="img/clients/3.png" alt="Image"></div>
-                    <!--  Client Item  -->
-                    <div class="client-item col-12"><img src="img/clients/4.png" alt="Image"></div>
-                    <!--  Client Item  -->
-                    <div class="client-item col-12"><img src="img/clients/5.png" alt="Image"></div>
-                    <!--  Client Item  -->
-                    <div class="client-item col-12"><img src="img/clients/1.png" alt="Image"></div>
-                    <!--  Client Item  -->
-                    <div class="client-item col-12"><img src="img/clients/2.png" alt="Image"></div>
-                    <!--  Client Item  -->
-                    <div class="client-item col-12"><img src="img/clients/3.png" alt="Image"></div>
-                    <!--  Client Item  -->
-                    <div class="client-item col-12"><img src="img/clients/4.png" alt="Image"></div>
-                    <!--  Client Item  --> <!--  Client Item  -->
-                    <div class="client-item col-12"><img src="img/clients/5.png" alt="Image"></div>
-                </div>
+
             </div>
         </div>
         <!-- Client Area End -->

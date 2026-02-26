@@ -3,8 +3,6 @@
 /*----------------------------------------*/
 /*  1.  Theme default CSS
 /*----------------------------------------*/
-/*-- Font Family --*/
-@import url("https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,800,900|Poppins:300,400,500,600,700");
 /*-- Common Style --*/
 html,
 body {
@@ -17,7 +15,7 @@ body {
     font-style: normal;
     font-weight: 400;
     visibility: visible;
-    font-family: "Poppins", sans-serif;
+    font-family: "Barlow", sans-serif;
     color: #757575;
 }
 
@@ -30,7 +28,7 @@ h6 {
     color: #424242;
     font-weight: 700;
     margin-top: 0;
-    font-family: "Montserrat", sans-serif;
+    font-family: "Barlow", sans-serif;
 }
 
 p:last-child {
@@ -43,13 +41,13 @@ button {
     display: inline-block;
     line-height: inherit !important;
     text-decoration: none !important;
-    font-family: "Montserrat", sans-serif;
+    font-family: "Barlow", sans-serif;
 }
 
 input,
 select,
 textarea {
-    font-family: "Montserrat", sans-serif;
+    font-family: "Barlow", sans-serif;
 }
 
 a,
@@ -798,8 +796,7 @@ select:-ms-input-placeholder {
 
 /*-- Page Banner Area --*/
 .page-banner-area {
-    background-image: url(img/bg/page-banner.jpg);
-    padding: 140px 0 133px;
+    padding: 120px 0 120px;
     z-index: 1;
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -843,9 +840,11 @@ select:-ms-input-placeholder {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    align-items: center;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
 }
+
 .page-banner ul li {
     display: inline-block;
     padding-right: 20px;
@@ -958,7 +957,7 @@ select:-ms-input-placeholder {
     font-size: 13px;
     line-height: 28px;
     color: #666666;
-    font-family: "Montserrat", sans-serif;
+    font-family: "Barlow", sans-serif;
     font-weight: 300;
     margin-right: 25px;
     display: inline-block;
@@ -1413,7 +1412,6 @@ a.meanmenu-reveal i {
 /*-- Hero Content --*/
 .hero-content h1 {
     font-size: 60px;
-    font-weight: 800;
     line-height: 64px;
     margin-bottom: 12px;
     text-transform: uppercase;
@@ -1825,18 +1823,12 @@ a.meanmenu-reveal i {
     background-image: url(img/about/content-bg.png);
     background-repeat: no-repeat;
     background-position: center center;
-    padding-left: 50px;
 }
-@media only screen and (max-width: 767px) {
-    .about-content {
-        padding-left: 15px;
-    }
-}
+
 .about-content h2 {
     color: #ffffff;
     font-size: 30px;
     line-height: 40px;
-    font-weight: 400;
     margin-bottom: 0;
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
@@ -2046,7 +2038,6 @@ a.meanmenu-reveal i {
     color: #424242;
     font-size: 30px;
     line-height: 40px;
-    font-weight: 400;
     margin-bottom: 0;
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
@@ -2683,7 +2674,7 @@ a.meanmenu-reveal i {
 .single-causes .donation-amount p {
     margin: 0;
     line-height: 21px;
-    font-family: "Montserrat", sans-serif;
+    font-family: "Barlow", sans-serif;
     font-weight: 500;
     color: #a4a4a4;
 }
@@ -2752,7 +2743,7 @@ a.meanmenu-reveal i {
 .single-causes-dark .donation-amount p {
     margin: 0;
     line-height: 21px;
-    font-family: "Montserrat", sans-serif;
+    font-family: "Barlow", sans-serif;
     font-weight: 500;
     color: #ffffff;
 }
@@ -2792,7 +2783,7 @@ a.meanmenu-reveal i {
     font-size: 15px;
     color: #6ab43e;
     display: block;
-    font-family: "Montserrat", sans-serif;
+    font-family: "Barlow", sans-serif;
     font-weight: 400;
 }
 .single-causes-details p {
@@ -2836,7 +2827,7 @@ a.meanmenu-reveal i {
     font-weight: 300;
     display: block;
     line-height: 24px;
-    font-family: "Montserrat", sans-serif;
+    font-family: "Barlow", sans-serif;
 }
 .single-causes-details table tr td span.number {
     color: #9c9c9c;
@@ -2847,7 +2838,7 @@ a.meanmenu-reveal i {
 }
 .single-causes-details table tr td p {
     margin: 0;
-    font-family: "Montserrat", sans-serif;
+    font-family: "Barlow", sans-serif;
     color: #9c9c9c;
     font-size: 15px;
     font-weight: 300;
@@ -2944,7 +2935,7 @@ a.meanmenu-reveal i {
 }
 .single-fact p {
     font-size: 16px;
-    font-family: "Montserrat", sans-serif;
+    font-family: "Barlow", sans-serif;
     font-weight: 400;
     color: #9b9b9a;
     line-height: 12px;
@@ -3203,7 +3194,7 @@ a.meanmenu-reveal i {
     font-size: 12px;
     line-height: 23px;
     color: #8b8b8b;
-    font-family: "Montserrat", sans-serif;
+    font-family: "Barlow", sans-serif;
     font-weight: 700;
     letter-spacing: 0.5px;
 }
@@ -3246,7 +3237,7 @@ a.meanmenu-reveal i {
     margin-bottom: 11px;
 }
 .single-speaker .content p {
-    font-family: "Montserrat", sans-serif;
+    font-family: "Barlow", sans-serif;
     font-weight: 500;
     font-size: 13px;
     color: #6ab43e;
@@ -3357,7 +3348,7 @@ a.meanmenu-reveal i {
     line-height: 12px;
     display: block;
     text-transform: uppercase;
-    font-family: "Montserrat", sans-serif;
+    font-family: "Barlow", sans-serif;
     margin-bottom: 12px;
 }
 .single-volunteer .content p {
@@ -3479,7 +3470,7 @@ a.meanmenu-reveal i {
 }
 .blog-item .content .meta span {
     font-size: 12px;
-    font-family: "Montserrat", sans-serif;
+    font-family: "Barlow", sans-serif;
     font-weight: 400;
     float: left;
     display: block;
@@ -4022,7 +4013,7 @@ a.meanmenu-reveal i {
     line-height: 22px;
     font-weight: 300;
     color: #818181;
-    font-family: "Montserrat", sans-serif;
+    font-family: "Barlow", sans-serif;
 }
 .single-contact-info:hover {
     background-color: #6ab43e;
@@ -4337,7 +4328,7 @@ a.meanmenu-reveal i {
 }
 .footer-bottom-area .copyright p {
     color: #9b9b9b;
-    font-family: "Montserrat", sans-serif;
+    font-family: "Barlow", sans-serif;
     font-size: 12px;
     line-height: 24px;
     font-weight: 300;
