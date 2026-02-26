@@ -1,4 +1,5 @@
 @extends('layouts.master')
+@section('title', 'Home')
 @section('content')
         <!-- Hero Area Start -->
         <div id="hero-area" class="hero-area section">
