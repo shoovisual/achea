@@ -7,8 +7,8 @@
                     <div class="row justify-content-between align-items-center">
                         <!-- Header Top Left -->
                         <div class="header-top-left col-md-auto col-12">
-                            <p><span>Phone:</span> +945 588 9966</p>
-                            <p><span>Email:</span> greensoul@email.com</p>
+                            <p><span>Phone:</span> +255 713 130 507</p>
+                            <p><span>Email:</span> info@achea.or.tz</p>
                         </div>
                         <!-- Header Top Right -->
                         <div class="header-top-right col-md-auto col-12 d-none d-md-flex">
@@ -18,7 +18,7 @@
                                 <a target="_blank" rel="noopener" href="https://www.instagram.com/"><i class="fa fa-instagram"></i></a>
                             </div>
                             <!-- Header Quote Button -->
-                            <a href="{{ route('contact') }}" class="get-quote">get a quote</a>
+                            <a href="{{ route('contact') }}" class="get-quote text-white">Donate Now</a>
                         </div>
                     </div>
                 </div>
