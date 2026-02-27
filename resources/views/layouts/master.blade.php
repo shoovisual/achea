@@ -9,7 +9,7 @@
     <!-- Favicon -->
     <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
     <!-- CSS -->
-    @vite(['resources/css/app.css', 'resources/js/app.js', 'resources/css/style.css', 'resources/js/main.js'])
+    @vite(['resources/css/app.css', 'resources/js/app.js', 'resources/js/plugins.js', 'resources/css/plugins.css', 'resources/css/style.css', 'resources/js/main.js'])
 </head>
 
 <body>
@@ -26,9 +26,8 @@
                     <div class="footer-widget col-lg-4 col-md-6 col-12 mb-50">
                         <!--  About Widget  -->
                         <div class="about-widget">
-                            <img src="img/logo-2.png" alt="Image">
-                            <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin
-                                literature from</p>
+                            <img src="{{ asset('img/logo.png') }}" alt="Image" width="120">
+                            <p>We champion integrated, community-led solutions to the interconnected crises of climate change, environmental degradation, and public health across the African continent.</p>
                             <!-- Footer Social -->
                             <div class="footer-social fix">
                                 <a target="_blank" rel="noopener" href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a>
@@ -37,7 +36,6 @@
                                 <a target="_blank" rel="noopener" href="https://www.pinterest.com/"><i class="fa fa-pinterest-p"></i></a>
                                 <a target="_blank" rel="noopener" href="https://www.instagram.com/"><i class="fa fa-instagram"></i></a>
                             </div>
-                            <a href="contact.html" class="button">Donate now</a>
                         </div>
                     </div>
                     <!--  Footer Widget  -->
@@ -45,33 +43,33 @@
                         <h3>Latest News</h3>
                         <!--  Latest News Widget  -->
                         <div class="footer-news">
-                            <a href="blog-details.html" class="image float-start"><img src="img/blog/footer/1.jpg" alt="Image"></a>
+                            <a href="#" class="image float-start"><img src="{{ asset('img/blog/footer/1.jpg') }}" alt="Image"></a>
                             <div class="content fix">
-                                <a href="blog-details.html">Finibus Bonorum Malorum</a>
-                                <p>Contrary to popular belief, Lorm Ipsum is not simply random</p>
+                                <a href="#">Climate Action Plan Launched</a>
+                                <p>New initiative to support rural health clinics.</p>
                             </div>
                         </div>
                         <div class="footer-news">
-                            <a href="blog-details.html" class="image float-start"><img src="img/blog/footer/2.jpg" alt="Image"></a>
+                            <a href="#" class="image float-start"><img src="{{ asset('img/blog/footer/2.jpg') }}" alt="Image"></a>
                             <div class="content fix">
-                                <a href="blog-details.html">The Standard lorem ipsum</a>
-                                <p>Contrary to popular belief, Lorm Ipsum is not simply random</p>
+                                <a href="#">Maternal Health Workshop</a>
+                                <p>Training midwives on climate resilience.</p>
                             </div>
                         </div>
                     </div>
                     <!--  Footer Widget  -->
                     <div class="footer-widget col-lg-4 col-md-6 col-12 mb-50">
-                        <h3>Flickr Photos</h3>
+                        <h3>Project Gallery</h3>
                         <!--  Flickr Widget  -->
                         <ul class="flickr-gallery">
-                            <li><a href="gallery.html"><img src="img/flickr/1.jpg" alt="Image"></a></li>
-                            <li><a href="gallery.html"><img src="img/flickr/2.jpg" alt="Image"></a></li>
-                            <li><a href="gallery.html"><img src="img/flickr/3.jpg" alt="Image"></a></li>
-                            <li><a href="gallery.html"><img src="img/flickr/4.jpg" alt="Image"></a></li>
-                            <li><a href="gallery.html"><img src="img/flickr/5.jpg" alt="Image"></a></li>
-                            <li><a href="gallery.html"><img src="img/flickr/6.jpg" alt="Image"></a></li>
-                            <li><a href="gallery.html"><img src="img/flickr/7.jpg" alt="Image"></a></li>
-                            <li><a href="gallery.html"><img src="img/flickr/2.jpg" alt="Image"></a></li>
+                            <li><a href="#"><img src="{{ asset('img/flickr/1.jpg') }}" alt="Image"></a></li>
+                            <li><a href="#"><img src="{{ asset('img/flickr/2.jpg') }}" alt="Image"></a></li>
+                            <li><a href="#"><img src="{{ asset('img/flickr/3.jpg') }}" alt="Image"></a></li>
+                            <li><a href="#"><img src="{{ asset('img/flickr/4.jpg') }}" alt="Image"></a></li>
+                            <li><a href="#"><img src="{{ asset('img/flickr/5.jpg') }}" alt="Image"></a></li>
+                            <li><a href="#"><img src="{{ asset('img/flickr/6.jpg') }}" alt="Image"></a></li>
+                            <li><a href="#"><img src="{{ asset('img/flickr/7.jpg') }}" alt="Image"></a></li>
+                            <li><a href="#"><img src="{{ asset('img/flickr/2.jpg') }}" alt="Image"></a></li>
                         </ul>
                     </div>
                 </div>
@@ -84,12 +82,13 @@
             <div class="container">
                 <!-- Copyright -->
                 <div class="copyright text-center">
-                    <p>Copyright &copy; {{ date('Y') }} ACHEA. Developed by <i class="fa fa-heart heart-icon"></i> By <a target="_blank"
-                            href="https://shoovisual.com/">Shoovisual</a></p>
+                    <p>Copyright &copy; {{ date('Y') }} ACHEA. All Rights Reserved.</p>
                 </div>
             </div>
         </div>
         <!-- Footer Bottom Area End -->
     </div>
 </body>
+
+<script src="{{ asset('js/vendor/jquery-3.6.0.min.js') }}"></script>
 </html>

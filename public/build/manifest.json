@@ -40,7 +40,7 @@
     "src": "node_modules/material-design-iconic-font/dist/fonts/Material-Design-Iconic-Font.woff2"
   },
   "resources/css/app.css": {
-    "file": "assets/app-2PkFDZ9J.css",
+    "file": "assets/app-DGZcH2io.css",
     "src": "resources/css/app.css",
     "isEntry": true,
     "name": "app",
@@ -58,7 +58,7 @@
     ]
   },
   "resources/js/app.js": {
-    "file": "assets/app-BG2RvrqE.js",
+    "file": "assets/app-CO6Qh-N5.js",
     "name": "app",
     "src": "resources/js/app.js",
     "isEntry": true,
@@ -83,7 +83,7 @@
     ]
   },
   "resources/js/main.js": {
-    "file": "assets/main-D-_fCWNu.js",
+    "file": "assets/main-B4uordlv.js",
     "name": "main",
     "src": "resources/js/main.js",
     "isEntry": true,

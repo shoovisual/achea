@@ -1,86 +1,178 @@
 @extends('layouts.master')
 @section('title', 'Home')
 @section('content')
-        <!-- Hero Area Start -->
-        <div id="hero-area" class="hero-area section">
-            <div class="hero-image-bg" style="background-image: url('{{ asset('img/hero/1.jpg') }}');">
-                <div class="hero-caption">
-                    <div class="container p-5">
-                        <div class="row">
-                            <!-- Hero Content -->
-                            <div class="hero-content col-12">
-                                <div class="row">
-                                    <div class="col-lg-9">
-                                        <h1 class="wow cusFadeInRight fw-medium" data-wow-duration=".5s" data-wow-delay="0.5s">Building Africa’s Climate, Health & Environmental Resilience</h1>
-                                        <p class="wow cusFadeInRight" data-wow-duration=".5s" data-wow-delay="1s">ACHEA champions integrated solutions to address Africa's interconnected crises of climate change, environmental degradation, and public health.</p>
-                                        <a href="#" class="learn-more wow cusFadeInRight text-white" data-wow-duration=".5s" data-wow-delay="1.5s">Learn More</a>
-                                    </div>
-                                </div>
-                            </div>
+    @include('components.hero-section')
+        <!-- About Area End -->
+        <!-- Key Pillars Area Start -->
+        <div id="pillars-area" class="section pt-120 pb-90">
+            <div class="container">
+                <div class="row">
+                    <div class="section-title text-center col-12 mb-80">
+                        <h2>KEY PILLARS</h2>
+                        <p style="max-width: 800px; margin: 0 auto;">At ACHEA, We believe that Africa's most pressing challenges are interconnected. Climate change exacerbates health risks, and environmental degradation undermines livelihoods and wellbeing. Our mission is to integrate, innovate, and implement solutions that address these issues holistically.</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 col-12 mb-30">
+                        <div class="service-item text-center" style="padding: 40px 30px; background: #fff; box-shadow: 0 10px 30px rgba(0,0,0,0.05); border-radius: 8px; transition: all 0.3s ease; height: 100%;">
+                            <div class="icon" style="font-size: 50px; color: #ff9f6f; margin-bottom: 25px;"><i class="fa fa-leaf"></i></div>
+                            <h4 style="font-weight: 700; margin-bottom: 15px; font-size: 20px;">Climate Action</h4>
+                            <p style="color: #666;">Driving adaptation strategies, promoting clean energy adoption, and advancing climate-smart health initiatives.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-12 mb-30">
+                        <div class="service-item text-center" style="padding: 40px 30px; background: #fff; box-shadow: 0 10px 30px rgba(0,0,0,0.05); border-radius: 8px; transition: all 0.3s ease; height: 100%;">
+                            <div class="icon" style="font-size: 50px; color: #ff9f6f; margin-bottom: 25px;"><i class="fa fa-globe"></i></div>
+                            <h4 style="font-weight: 700; margin-bottom: 15px; font-size: 20px;">Planetary Health</h4>
+                            <p style="color: #666;">Restoring ecosystems, conserving biodiversity, and ensuring clean air and water for all communities.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-12 mb-30">
+                        <div class="service-item text-center" style="padding: 40px 30px; background: #fff; box-shadow: 0 10px 30px rgba(0,0,0,0.05); border-radius: 8px; transition: all 0.3s ease; height: 100%;">
+                            <div class="icon" style="font-size: 50px; color: #ff9f6f; margin-bottom: 25px;"><i class="fa fa-users"></i></div>
+                            <h4 style="font-weight: 700; margin-bottom: 15px; font-size: 20px;">Community Resilience</h4>
+                            <p style="color: #666;">Strengthening health systems, fostering sustainable livelihoods, and empowering women and youth to lead.</p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- Hero Area End -->
-        <!-- Service Area Start -->
+        <!-- Key Pillars Area End -->
+
+        <!-- Crisis Intersection Statement Area Start -->
+        <div id="about-area" class="about-area section pb-120 pt-120" style="background: linear-gradient(to right, #f9f9f9, #ffffff);">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6 col-12 order-lg-2 mb-30">
+                        <div class="about-image-2" style="position: relative; border-radius: 8px; overflow: hidden; box-shadow: 0 20px 40px rgba(0,0,0,0.1);">
+                            <img src="{{ asset('img/about/about-2.jpg') }}" alt="Image" style="width: 100%; height: auto; display: block;">
+                            <a class="video-popup play-btn" href="https://www.youtube.com/watch?v=mcixldqDIEQ" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 80px; height: 80px; line-height: 80px; text-align: center; background: #fff; color: #ff9f6f; border-radius: 50%; font-size: 30px; transition: all 0.3s ease; box-shadow: 0 10px 20px rgba(0,0,0,0.1);"><i class="zmdi zmdi-play" style="margin-left: 5px;"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-12 mb-30">
+                        <div class="about-content-2" style="padding-right: 30px;">
+                            <span style="display: block; color: #ff9f6f; font-weight: 700; text-transform: uppercase; letter-spacing: 2px; margin-bottom: 10px;">The Challenge</span>
+                            <h2 style="font-size: 42px; font-weight: 800; line-height: 1.2; margin-bottom: 25px; color: #333;">The Crisis Intersection</h2>
+                            <p style="font-size: 18px; line-height: 1.8; color: #666; margin-bottom: 30px;">Climate change threatens vulnerable communities and affects maternal and neonatal survival. Extreme heat increases preterm births, while water scarcity compromises hygiene during delivery. Coupled with food insecurity and floods that disrupt health services, these interconnected challenges demand a unified response.</p>
+                            <a href="{{ route('about') }}" class="button rounded-pill text-white">View Details <i class="bi bi-arrow-right ml-2"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Crisis Intersection Statement Area End -->
+        <!-- Crisis Circles Area Start -->
         <div id="service-area" class="service-area section pt-120 pb-120">
             <div class="container">
                 <!-- Section Title -->
                 <div class="row">
                     <div class="section-title text-center col-12 mb-80">
-                        <h1>1500+</h1>
-                        <h2>People Working with Us</h2>
-                        <p>Our work focuses on strengthening climate-resilient health systems, protecting ecosystems, and empowering communities, especially women and youth, to adapt and thrive in the face of climate change.</p>
+                        <h2>Three Interconnected Circles</h2>
                     </div>
                 </div>
+                @php
+                     $services = [
+                        [
+                            'image' => 'img/service/1.png',
+                            'title' => 'Climate Impacts',
+                            'description' => 'Heat stress, floods, droughts, vector-borne diseases'
+                        ],
+                        [
+                            'image' => 'img/service/2.png',
+                            'title' => 'WASH Crisis',
+                            'description' => 'Contaminated water, poor sanitation, hygiene gaps in clinics'
+                        ],
+                        [
+                            'image' => 'img/service/3.png',
+                            'title' => 'Maternal/Neonatal Health',
+                            'description' => 'Infection risks, preterm births, delivery complications'
+                        ],
+                    ];
+                @endphp
+                <!-- Services -->
                 <div class="row">
-                    <!--  Single Service  -->
-                    <div class="single-service text-center col-lg-4 col-md-6 col-12">
-                        <img src="img/service/1.png" alt="Image">
-                        <h4>Climate-Smart Maternal Clinics</h4>
-                        <p>We support the development of climate-resilient health facilities through solar power, reliable water systems, and heat-adaptive infrastructure. These clinics ensure safe deliveries, vaccine storage, and uninterrupted maternal and neonatal care.</p>
-                    </div>
-                    <!--  Single Service  -->
-                    <div class="single-service text-center col-lg-4 col-md-6 col-12">
-                        <img src="img/service/2.png" alt="Image">
-                        <h4>WASH for Safe Motherhood</h4>
-                        <p>We improve access to clean water, sanitation, and hygiene in health facilities and communities. Our interventions include clean birth kits, community-managed water points, and improved sanitation facilities that promote safe childbirth and dignity for women.</p>
-                    </div>
-                    <!--  Single Service  -->
-                    <div class="single-service text-center col-lg-4 col-md-6 col-12">
-                        <img src="img/service/3.png" alt="Image">
-                        <h4>Community Resilience Programs</h4>
-                        <p>We empower communities through mother-led climate adaptation groups, early warning systems linked to maternal health alerts, and emergency preparedness plans for climate-related disasters.</p>
-                    </div>
+                    @foreach ($services as $service)
+                        <div class="single-service text-center col-lg-4 d-flex flex-column col-md-6 col-12 justify-content-center align-items-center mb-30">
+                            <img src="{{ asset($service['image']) }}" alt="{{ $service['title'] }}" width="50">
+                            <h4 class="text-lg">{{ $service['title'] }}</h4>
+                            <p>{{ $service['description'] }}</p>
+                        </div>
+                    @endforeach
                 </div>
             </div>
         </div>
-        <!-- Service Area End -->
-        <!-- About Area Start -->
-        <div id="about-area" class="about-area bg-dark section">
-            <!--  About Image  -->
-            <div class="about-image"><img src="img/about/about.jpg" alt="Image"></div>
+        <!-- Crisis Circles Area End -->
+        <!-- Integrated Solutions Area Start -->
+        <div id="solutions-area" class="section bg-gray pt-120 pb-90">
             <div class="container">
                 <div class="row">
-                    <!--  About Content  -->
-                    <div class="about-content col-lg-6 col-12 ms-auto py-20">
-                        <h2>ABOUT US</h2>
-                        <div class="text-white">
-                            <h1>African Climate, Health & Environmental Actions (ACHEA)</h1>
-                            <p>ACHEA is a pan-African initiative working at the intersection of climate action, maternal and neonatal health, and environmental sustainability.</p>
-                            <p>Our mission is to integrate climate-smart solutions into health systems while promoting planetary health and community resilience. We recognize that climate change exacerbates health risks, particularly for mothers and newborns, while environmental degradation undermines livelihoods and wellbeing.</p>
-                            <p>ACHEA responds through innovation, collaboration, and community-led action—ensuring that Africa’s most vulnerable populations are not left behind.</p>
+                    <div class="section-title text-center col-12 mb-80">
+                        <h2>Our Integrated Solutions</h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <!-- Solution 1 -->
+                    <div class="col-lg-4 col-md-6 col-12 mb-30">
+                        <div class="single-project text-center" style="background: #fff; padding: 40px 30px; height: 100%; box-shadow: 0 10px 30px rgba(0,0,0,0.05); border-radius: 8px; transition: all 0.3s ease;">
+                            <div class="icon" style="font-size: 50px; color: #ff9f6f; margin-bottom: 25px;">
+                                <i class="fa fa-sun-o"></i>
+                            </div>
+                            <h4 style="font-weight: 700; margin-bottom: 15px; font-size: 20px;">Climate-Smart Maternal Clinics</h4>
+                            <p style="margin-bottom: 20px; color: #666;">Solar-powered, water-secure, and heat-resilient facilities ensuring safe deliveries even in extreme weather.</p>
+                            <a href="#" style="color: #ff9f6f; font-weight: 600; text-transform: uppercase; font-size: 14px; letter-spacing: 1px;">Learn More <i class="fa fa-angle-right ml-1"></i></a>
                         </div>
-                        <div>
-                            <a href="#" class="button white">JOIN NOW</a>
-                            <a href="#" class="button class="text-white"">view details</a>
+                    </div>
+                    <!-- Solution 2 -->
+                    <div class="col-lg-4 col-md-6 col-12 mb-30">
+                        <div class="single-project text-center" style="background: #fff; padding: 40px 30px; height: 100%; box-shadow: 0 10px 30px rgba(0,0,0,0.05); border-radius: 8px; transition: all 0.3s ease;">
+                            <div class="icon" style="font-size: 50px; color: #ff9f6f; margin-bottom: 25px;">
+                                <i class="fa fa-tint"></i>
+                            </div>
+                            <h4 style="font-weight: 700; margin-bottom: 15px; font-size: 20px;">WASH for Safe Motherhood</h4>
+                            <p style="margin-bottom: 20px; color: #666;">Clean birth kits, community water management, and sanitation to prevent infections and ensure hygiene.</p>
+                            <a href="#" style="color: #ff9f6f; font-weight: 600; text-transform: uppercase; font-size: 14px; letter-spacing: 1px;">Learn More <i class="fa fa-angle-right ml-1"></i></a>
+                        </div>
+                    </div>
+                    <!-- Solution 3 -->
+                    <div class="col-lg-4 col-md-6 col-12 mb-30">
+                        <div class="single-project text-center" style="background: #fff; padding: 40px 30px; height: 100%; box-shadow: 0 10px 30px rgba(0,0,0,0.05); border-radius: 8px; transition: all 0.3s ease;">
+                            <div class="icon" style="font-size: 50px; color: #ff9f6f; margin-bottom: 25px;">
+                                <i class="fa fa-users"></i>
+                            </div>
+                            <h4 style="font-weight: 700; margin-bottom: 15px; font-size: 20px;">Community Resilience Programs</h4>
+                            <p style="margin-bottom: 20px; color: #666;">Empowering women through early warning systems, emergency transport, and climate adaptation groups.</p>
+                            <a href="#" style="color: #ff9f6f; font-weight: 600; text-transform: uppercase; font-size: 14px; letter-spacing: 1px;">Learn More <i class="fa fa-angle-right ml-1"></i></a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- About Area End -->
+        <!-- Integrated Solutions Area End -->
+        <!-- Video Area Start -->
+        <div id="video-area" class="video-area section overlay py-30" style="position: relative; background-attachment: fixed;">
+            <!-- Dark Overlay for better text contrast -->
+            <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(18, 18, 18, 0.7); z-index: 0;"></div>
+
+            <div class="container" style="position: relative; z-index: 1;">
+                <div class="row justify-content-center">
+                    <!--  Video Wrapper  -->
+                    <div class="video-wrapper col-lg-10 col-12 text-center">
+                        <div style="margin-bottom: 25px;">
+                            <span style="display: inline-block; padding: 10px 25px; background: rgba(255, 159, 111, 0.2); color: #ff9f6f; border-radius: 30px; font-weight: 700; text-transform: uppercase; font-size: 14px; letter-spacing: 2px; border: 1px solid rgba(255, 159, 111, 0.3);">
+                                Impact in Action
+                            </span>
+                        </div>
+                        <h1 style="color: #fff; font-size: 48px; font-weight: 800; margin-bottom: 30px; line-height: 1.3; text-transform: uppercase;">Watch Our Latest <br><span style="color: #ff9f6f;">Campaign Video</span></h1>
+                        <p style="color: #e0e0e0; font-size: 18px; line-height: 1.8; margin-bottom: 60px; max-width: 800px; margin-left: auto; margin-right: auto;">Discover how ACHEA is integrating climate action with maternal and neonatal health to build resilient communities across Africa. Our holistic approach addresses the interconnected challenges of our time.</p>
+
+                        <a class="video-popup modern-play-btn text-white" href="https://www.youtube.com/watch?v=mcixldqDIEQ">
+                            <i class="fa fa-play" style="margin-left: 5px;"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Video Area End -->
         <!-- Project Area Start -->
         <div id="project-area" class="project-area section pt-120 pb-90">
             <div class="container">
@@ -90,312 +182,86 @@
                         <h2>RECENT PROJECT</h2>
                     </div>
                 </div>
+                @php
+                    $projects = [
+                            [
+                                'image' => 'img/project/1.jpg',
+                                'title' => 'Solar-Powered Maternity Wards',
+                                'slug'  => '#',
+                                'tags'  => ['Energy', 'Health'],
+                                'description' => 'Ensuring reliable energy for safe deliveries in rural clinics. Our solar installations provide lighting and refrigeration for vaccines.',
+                            ],
+                            [
+                                'image' => 'img/project/2.jpg',
+                                'title' => 'Mangrove Restoration for Health',
+                                'slug'  => '#',
+                                'tags'  => ['Ecosystem', 'Resilience'],
+                                'description' => 'Protecting coastlines and improving water quality for communities. Healthy mangroves support biodiversity and local livelihoods.',
+                            ],
+                            [
+                                'image' => 'img/project/3.jpg',
+                                'title' => 'Clean Birth Kits Initiative',
+                                'slug'  => '#',
+                                'tags'  => ['WASH', 'Maternal'],
+                                'description' => 'Providing essential hygiene supplies to mothers in climate-affected areas. Reducing infection risks during childbirth.',
+                            ],
+                        ];
+                @endphp
                 <div class="row">
-                    <!--  Single Project  -->
-                    <div class="col-lg-4 col-md-6 col-12 mb-30">
-                        <div class="single-project">
-                            <!--  Image  -->
-                            <img src="img/project/1.jpg" alt="Image">
-                            <!--  Title  -->
-                            <h4><a href="project-details.html">All the Lorem Ipsum Gener</a></h4>
-                            <!--  Tags  -->
-                            <div class="tags fix">
-                                <a href="#">Energy</a>
-                                <a href="#">Green</a>
-                                <a href="#">Solar</a>
+                    @foreach ($projects as $project)
+                        <div class="col-lg-4 col-md-6 col-12 mb-30">
+                            <div class="single-project" style="background: #fff; border-radius: 8px; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.05); transition: all 0.3s ease; height: 100%; display: flex; flex-direction: column;">
+
+                                <!-- Image -->
+                                <div class="image" style="position: relative; overflow: hidden; height: 240px;">
+                                    <img src="{{ asset($project['image']) }}" alt="{{ $project['title'] }}" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease;">
+                                    <div class="overlay" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.2); opacity: 0; transition: opacity 0.3s ease;"></div>
+                                </div>
+
+                                <div class="content" style="padding: 30px; flex-grow: 1; display: flex; flex-direction: column;">
+                                    <!-- Tags -->
+                                    <div class="tags mb-15">
+                                        @foreach ($project['tags'] as $tag)
+                                            <span style="font-size: 12px; font-weight: 600; text-transform: uppercase; color: #ff9f6f; background: rgba(255, 159, 111, 0.1); padding: 4px 12px; border-radius: 20px; margin-right: 5px;">{{ $tag }}</span>
+                                        @endforeach
+                                    </div>
+
+                                    <!-- Title -->
+                                    <h4 style="margin-bottom: 15px; font-weight: 700; line-height: 1.4;">
+                                        <a href="{{ $project['slug'] }}" style="color: #333; transition: color 0.3s ease; text-decoration: none;">
+                                            {{ $project['title'] }}
+                                        </a>
+                                    </h4>
+
+                                    <!-- Content -->
+                                    <p style="color: #666; margin-bottom: 25px; flex-grow: 1;">{{ $project['description'] }}</p>
+
+                                    <!-- Button -->
+                                    <div class="mt-auto">
+                                        <a href="{{ $project['slug'] }}" style="color: #ff9f6f; font-weight: 600; text-transform: uppercase; font-size: 14px; letter-spacing: 1px; display: inline-flex; align-items: center;">
+                                            Learn More <i class="bi bi-arrow-right ml-2" style="font-size: 12px; transition: transform 0.3s ease;"></i>
+                                        </a>
+                                    </div>
+                                </div>
                             </div>
-                            <!--  Content  -->
-                            <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin
-                                literature from 45 BC, making it over 2000 years old. Richard McClitock,</p>
-                            <!--  Button  -->
-                            <a class="button" href="project-details.html">Learn More</a>
                         </div>
-                    </div>
-                    <!--  Single Project  -->
-                    <div class="col-lg-4 col-md-6 col-12 mb-30">
-                        <div class="single-project">
-                            <!--  Image  -->
-                            <img src="img/project/2.jpg" alt="Image">
-                            <!--  Title  -->
-                            <h4><a href="project-details.html">It is a long established fact</a></h4>
-                            <!--  Tags  -->
-                            <div class="tags fix">
-                                <a href="#">Energy</a>
-                                <a href="#">Green</a>
-                                <a href="#">Solar</a>
-                            </div>
-                            <!--  Content  -->
-                            <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin
-                                literature from 45 BC, making it over 2000 years old. Richard McClitock,</p>
-                            <!--  Button  -->
-                            <a class="button" href="project-details.html">Learn More</a>
-                        </div>
-                    </div>
-                    <!--  Single Project  -->
-                    <div class="col-lg-4 col-md-6 col-12 mb-30">
-                        <div class="single-project">
-                            <!--  Image  -->
-                            <img src="img/project/3.jpg" alt="Image">
-                            <!--  Title  -->
-                            <h4><a href="project-details.html">All the Lorem Ipsum Gener</a></h4>
-                            <!--  Tags  -->
-                            <div class="tags fix">
-                                <a href="#">Energy</a>
-                                <a href="#">Green</a>
-                                <a href="#">Solar</a>
-                            </div>
-                            <!--  Content  -->
-                            <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin
-                                literature from 45 BC, making it over 2000 years old. Richard McClitock,</p>
-                            <!--  Button  -->
-                            <a class="button" href="project-details.html">Learn More</a>
-                        </div>
-                    </div>
+                    @endforeach
                 </div>
             </div>
         </div>
         <!-- Project Area End -->
-        <!-- Donation Area Start -->
-        <div id="donation-area" class="donation-area section pb-120">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12">
-                        <!--  Donation Section Title  -->
-                        <div class="donation-title text-center fix">
-                            <h3>NEED URGENT DONATION FOR</h3>
-                            <h1>PROTECT & CARE OUR ENVIRONMENT</h1>
-                        </div>
-                        <!--  Donation Form  -->
-                        <div class="donation-form">
-                            <form action="#" id="donation-form">
-                                <div class="input-box input-3"><input type="text" placeholder="YOUR NAME"></div>
-                                <div class="input-box input-3"><input type="email" placeholder="EMAIL"></div>
-                                <div class="input-box input-3">
-                                    <select>
-                                        <option value="1">SELECT PROJECT</option>
-                                        <option value="2">PROJECT NUMBER 1</option>
-                                        <option value="3">PROJECT NUMBER 2</option>
-                                        <option value="4">PROJECT NUMBER 3</option>
-                                        <option value="5">PROJECT NUMBER 4</option>
-                                        <option value="6">PROJECT NUMBER 4</option>
-                                    </select>
-                                </div>
-                                <div class="input-box input-3">
-                                    <select>
-                                        <option value="1">SELECT AMOUNT</option>
-                                        <option value="2">$1000</option>
-                                        <option value="3">$1500</option>
-                                        <option value="4">$2000</option>
-                                        <option value="5">$2500</option>
-                                        <option value="6">$3000</option>
-                                    </select>
-                                </div>
-                                <div class="input-box input-3"><input type="submit" value="donate now"></div>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Donation Area End -->
-        <!-- Causes Area Start -->
-        <div id="causes-area" class="causes-area bg-dark section pt-120 pb-90">
-            <div class="container">
-                <!-- Section Title -->
-                <div class="row">
-                    <div class="section-title white text-center col-12 mb-80">
-                        <h2>LATEST CAUSES</h2>
-                    </div>
-                </div>
-                <div class="row">
-                    <!--  Single Causes  -->
-                    <div class="col-lg-4 col-md-6 col-12 mb-30">
-                        <div class="single-causes-dark">
-                            <div class="wrap">
-                                <!--  Image  -->
-                                <img src="img/causes/1.jpg" alt="Image">
-                                <!--  Title  -->
-                                <h4><a href="causes-details.html">All the Lorem Ipsum Gener</a></h4>
-                                <!--  Country  -->
-                                <span>Brazil</span>
-                                <!--  Content  -->
-                                <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical
-                                    Latin literature from</p>
-                                <!--  Button  -->
-                                <a class="button" href="#">donate</a>
-                            </div>
-                            <!--  Donation Amount  -->
-                            <div class="donation-amount fix">
-                                <p class="total float-start">Target: <span>$5000</span> </p>
-                                <p class="raise float-end">Raised: <span>$2000</span> </p>
-                            </div>
-                        </div>
-                    </div>
-                    <!--  Single Causes  -->
-                    <div class="col-lg-4 col-md-6 col-12 mb-30">
-                        <div class="single-causes-dark">
-                            <div class="wrap">
-                                <!--  Image  -->
-                                <img src="img/causes/2.jpg" alt="Image">
-                                <!--  Title  -->
-                                <h4><a href="causes-details.html">Contrary to popular belief</a></h4>
-                                <!--  Country  -->
-                                <span>Bangladesh</span>
-                                <!--  Content  -->
-                                <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical
-                                    Latin literature from</p>
-                                <!--  Button  -->
-                                <a class="button" href="#">donate</a>
-                            </div>
-                            <!--  Donation Amount  -->
-                            <div class="donation-amount fix">
-                                <p class="total float-start">Target: <span>$5000</span> </p>
-                                <p class="raise float-end">Raised: <span>$2000</span> </p>
-                            </div>
-                        </div>
-                    </div>
-                    <!--  Single Causes  -->
-                    <div class="col-lg-4 col-md-6 col-12 mb-30">
-                        <div class="single-causes-dark">
-                            <div class="wrap">
-                                <!--  Image  -->
-                                <img src="img/causes/3.jpg" alt="Image">
-                                <!--  Title  -->
-                                <h4><a href="causes-details.html">It is a long established fact</a></h4>
-                                <!--  Country  -->
-                                <span>Brazil</span>
-                                <!--  Content  -->
-                                <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical
-                                    Latin literature from</p>
-                                <!--  Button  -->
-                                <a class="button" href="#">donate</a>
-                            </div>
-                            <!--  Donation Amount  -->
-                            <div class="donation-amount fix">
-                                <p class="total float-start">Target: <span>$5000</span> </p>
-                                <p class="raise float-end">Raised: <span>$2000</span> </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Causes Area End -->
         @include('components.facts')
-        <!-- Video Area Start -->
-        {{-- <div id="video-area" class="video-area section overlay pt-150 pb-150">
+        <!-- Partners Area Start -->
+        <div id="partners-area" class="client-area section pt-115 pb-115">
             <div class="container">
-                <div class="row">
-                    <!--  Video Wrapper  -->
-                    <div class="video-wrapper col-12 text-center">
-                        <h1>WATCH OUR LATEST CAMPAIGN VIDEO</h1>
-                        <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of clssical Latin
-                            literature from 45 BC, making it over 2000 years old.</p>
-                        <a class="video-popup" href="https://www.youtube.com/watch?v=mcixldqDIEQ"><i
-                                class="zmdi zmdi-play-circle-outline"></i></a>
-                    </div>
-                </div>
-            </div>
-        </div> --}}
-        <!-- Video Area End -->
-        <!-- Event Gallery Area Start -->
-        <div id="event-gallery-area" class="event-gallery-area section pt-120 pb-70">
-            <div class="container">
-                <div class="row">
-                    <!--  Event Wrapper  -->
-                    <div class="event-wrapper col-xl-5 col-lg-6 col-12 mb-50">
-                        <!--  Block Title  -->
-                        <h3 class="block-title">Latest Events</h3>
-                        <!--  Single Event List  -->
-                        <div class="event-list fix">
-                            <div class="date float-start">
-                                <h1>20</h1>
-                                <h4>june</h4>
-                            </div>
-                            <div class="content fix">
-                                <a href="causes-details.html">Cites of the word in class</a>
-                                <p>There are many variations of passages of Lorem Ipsum available,</p>
-                            </div>
-                        </div>
-                        <!--  Single Event List  -->
-                        <div class="event-list fix">
-                            <div class="date float-start">
-                                <h1>23</h1>
-                                <h4>june</h4>
-                            </div>
-                            <div class="content fix">
-                                <a href="causes-details.html">long established fact that</a>
-                                <p>There are many variations of passages of Lorem Ipsum available,</p>
-                            </div>
-                        </div>
-                        <!--  Single Event List  -->
-                        <div class="event-list fix">
-                            <div class="date float-start">
-                                <h1>25</h1>
-                                <h4>june</h4>
-                            </div>
-                            <div class="content fix">
-                                <a href="causes-details.html">Contrary to popular belief</a>
-                                <p>There are many variations of passages of Lorem Ipsum available,</p>
-                            </div>
-                        </div>
-                    </div>
-                    <!--  Small Gallery Wrapper  -->
-                    <div class="small-gallery-wrapper ms-auto col-lg-6 col-12 mb-40">
-                        <!--  Block Title  -->
-                        <h3 class="block-title">PHOTO GALLERY</h3>
-                        <div class="row row-5">
-                            <!--  Gallery Item  -->
-                            <div class="col-md-4 col-sm-3 col-xs-6 mb-10">
-                                <a href="img/gallery/big-1.jpg" class="gallery-item gallery-popup"><img src="img/gallery/small-thumb-1.jpg"
-                                        alt="Image"></a>
-                            </div>
-                            <!--  Gallery Item  -->
-                            <div class="col-md-4 col-sm-3 col-xs-6 mb-10">
-                                <a href="img/gallery/big-2.jpg" class="gallery-item gallery-popup"><img src="img/gallery/small-thumb-2.jpg"
-                                        alt="Image"></a>
-                            </div>
-                            <!--  Gallery Item  -->
-                            <div class="col-md-4 col-sm-3 col-xs-6 mb-10">
-                                <a href="img/gallery/big-3.jpg" class="gallery-item gallery-popup"><img src="img/gallery/small-thumb-3.jpg"
-                                        alt="Image"></a>
-                            </div>
-                            <!--  Gallery Item  -->
-                            <div class="col-md-4 col-sm-3 col-xs-6 mb-10">
-                                <a href="img/gallery/big-4.jpg" class="gallery-item gallery-popup"><img src="img/gallery/small-thumb-4.jpg"
-                                        alt="Image"></a>
-                            </div>
-                            <!--  Gallery Item  -->
-                            <div class="col-md-4 col-sm-3 col-xs-6 mb-10">
-                                <a href="img/gallery/big-5.jpg" class="gallery-item gallery-popup"><img src="img/gallery/small-thumb-5.jpg"
-                                        alt="Image"></a>
-                            </div>
-                            <!--  Gallery Item  -->
-                            <div class="col-md-4 col-sm-3 col-xs-6 mb-10">
-                                <a href="img/gallery/big-6.jpg" class="gallery-item gallery-popup"><img src="img/gallery/small-thumb-6.jpg"
-                                        alt="Image"></a>
-                            </div>
-                        </div>
+                 <div class="row">
+                    <div class="section-title text-center col-12">
+                        <h2>Partners & Collaborators</h2>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- Event Gallery Area End -->
-        <!-- Client Area Start -->
-        <div id="client-area" class="client-area bg-dark section pt-115 pb-115">
-            <div class="container">
-                <!-- Section Title -->
-                <div class="row">
-                    <div class="section-title white text-center col-12 mb-80">
-                        <h2>PARTNERS & COLLABORATION</h2>
-                        <p>ACHEA believes that sustainable impact is achieved through strong partnerships. We collaborate with governments, development partners, health institutions, climate networks, and community organizations to scale integrated solutions.</p>
-                        <p>Our partnership approach focuses on shared goals, local ownership, and evidence-based interventions that strengthen health systems, protect the environment, and improve lives across Africa.</p>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-        <!-- Client Area End -->
+        <!-- Partners Area End -->
         <!-- Blog Area Start -->
         <div id="blog-area" class="blog-area section pt-120 pb-90">
             <div class="container">
@@ -405,66 +271,109 @@
                         <h2>LATEST NEWS</h2>
                     </div>
                 </div>
+                @php
+                    $blogs = [
+                        [
+                            'image' => 'img/blog/1.jpg',
+                            'title' => 'ACHEA Launches New Climate Strategy',
+                            'slug' => '#',
+                            'date' => '28 Jan 2026',
+                            'comments' => 3,
+                            'excerpt' => 'A comprehensive plan to address health risks in a warming world. We are prioritizing community-led adaptation.',
+                        ],
+                        [
+                            'image' => 'img/blog/2.jpg',
+                            'title' => 'Partnering with Local Midwives',
+                            'slug' => '#',
+                            'date' => '15 Feb 2026',
+                            'comments' => 5,
+                            'excerpt' => 'Empowering frontline workers with climate-smart tools. Midwives are key to building resilient health systems.',
+                        ],
+                        [
+                            'image' => 'img/blog/3.jpg',
+                            'title' => 'Water Scarcity and Maternal Health',
+                            'slug' => '#',
+                            'date' => '10 Mar 2026',
+                            'comments' => 8,
+                            'excerpt' => 'Understanding the critical link between access to water and safe childbirth. We must secure WASH services for all.',
+                        ],
+                    ];
+                @endphp
                 <div class="row">
-                    <!--  Blog Item  -->
-                    <div class="col-lg-4 col-md-6 col-12 mb-30">
-                        <div class="blog-item">
-                            <!--  Image  -->
-                            <a href="blog-details.html" class="image"><img src="img/blog/1.jpg" alt="Image"></a>
-                            <!--  Content  -->
-                            <div class="content">
-                                <h4><a href="blog-details.html">All the Lorem Ipsum Gener</a></h4>
-                                <!--  Meta  -->
-                                <div class="meta fix">
-                                    <span>28 January 2022</span>
-                                    <span><a href="#">3 Comment</a></span>
+                    @foreach ($blogs as $blog)
+                        <div class="col-lg-4 col-md-6 col-12 mb-30">
+                            <div class="blog-item"
+                                style="background:#fff;border-radius:8px;overflow:hidden;
+                                        box-shadow:0 10px 30px rgba(0,0,0,0.05);
+                                        transition:all 0.3s ease;height:100%;
+                                        display:flex;flex-direction:column;">
+
+                                <!-- Image -->
+                                <div class="image" style="position:relative;overflow:hidden;height:240px;">
+                                    <a href="{{ $blog['slug'] }}" style="display:block;width:100%;height:100%;">
+                                        <img src="{{ asset($blog['image']) }}"
+                                            alt="{{ $blog['title'] }}"
+                                            style="width:100%;height:100%;object-fit:cover;
+                                                    transition:transform 0.5s ease;">
+                                    </a>
                                 </div>
-                                <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical
-                                    Latin literature from</p>
-                                <a href="blog-details.html" class="read-more">LEARN MORE</a>
+
+                                <!-- Content -->
+                                <div class="content"
+                                    style="padding:30px;flex-grow:1;
+                                            display:flex;flex-direction:column;">
+
+                                    <!-- Meta -->
+                                    <div class="meta fix"
+                                        style="margin-bottom:15px;font-size:13px;color:#999;">
+                                        <span style="margin-right:15px;">
+                                            <i class="fa fa-calendar"
+                                            style="color:#ff9f6f;margin-right:5px;"></i>
+                                            {{ $blog['date'] }}
+                                        </span>
+                                        <span>
+                                            <i class="fa fa-comments"
+                                            style="color:#ff9f6f;margin-right:5px;"></i>
+                                            <a href="{{ $blog['slug'] }}" style="color:#999;">
+                                                {{ $blog['comments'] }} Comments
+                                            </a>
+                                        </span>
+                                    </div>
+
+                                    <!-- Title -->
+                                    <h4 style="margin-bottom:15px;font-weight:700;
+                                            line-height:1.4;font-size:20px;">
+                                        <a href="{{ $blog['slug'] }}"
+                                        style="color:#333;transition:color 0.3s ease;
+                                                text-decoration:none;">
+                                            {{ $blog['title'] }}
+                                        </a>
+                                    </h4>
+
+                                    <!-- Excerpt -->
+                                    <p style="color:#666;margin-bottom:25px;flex-grow:1;">
+                                        {{ $blog['excerpt'] }}
+                                    </p>
+
+                                    <!-- Button -->
+                                    <div class="mt-auto">
+                                        <a href="{{ $blog['slug'] }}" class="read-more"
+                                        style="color:#ff9f6f;font-weight:600;
+                                                text-transform:uppercase;font-size:14px;
+                                                letter-spacing:1px;
+                                                display:inline-flex;align-items:center;">
+                                            LEARN MORE
+                                            <i class="bi bi-arrow-right ml-2"
+                                            style="font-size:12px;
+                                                    transition:transform 0.3s ease;"></i>
+                                        </a>
+                                    </div>
+
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <!--  Blog Item  -->
-                    <div class="col-lg-4 col-md-6 col-12 mb-30">
-                        <div class="blog-item">
-                            <!--  Image  -->
-                            <a href="blog-details.html" class="image"><img src="img/blog/2.jpg" alt="Image"></a>
-                            <!--  Content  -->
-                            <div class="content">
-                                <h4><a href="blog-details.html">Finibus Bonorum et Malorum</a></h4>
-                                <!--  Meta  -->
-                                <div class="meta fix">
-                                    <span>28 January 2022</span>
-                                    <span><a href="#">3 Comment</a></span>
-                                </div>
-                                <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical
-                                    Latin literature from</p>
-                                <a href="blog-details.html" class="read-more">LEARN MORE</a>
-                            </div>
-                        </div>
-                    </div>
-                    <!--  Blog Item  -->
-                    <div class="col-lg-4 col-md-6 col-12 mb-30">
-                        <div class="blog-item">
-                            <!--  Image  -->
-                            <a href="blog-details.html" class="image"><img src="img/blog/3.jpg" alt="Image"></a>
-                            <!--  Content  -->
-                            <div class="content">
-                                <h4><a href="blog-details.html">The standard Lorem Ipsuma</a></h4>
-                                <!--  Meta  -->
-                                <div class="meta fix">
-                                    <span>28 January 2022</span>
-                                    <span><a href="#">3 Comment</a></span>
-                                </div>
-                                <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical
-                                    Latin literature from</p>
-                                <a href="blog-details.html" class="read-more">LEARN MORE</a>
-                            </div>
-                        </div>
-                    </div>
+                    @endforeach
                 </div>
             </div>
         </div>
-        <!-- Blog Area End -->
 @endsection
