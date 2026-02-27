@@ -19,22 +19,27 @@
 <!-- Page Banner Area End -->
 
 <!-- About Area Start -->
-<div id="about-area" class="about-area section pt-120 pb-120">
+<div id="about-area" class="about-area section py-30" style="background: linear-gradient(to right, #f9f9f9, #ffffff);">
     <div class="container">
-        <div class="row">
+        <div class="row align-items-start">
             <!--  About Image  -->
-            <div class="about-image-2 col-lg-5 col-12"><img src="{{ asset('img/about/about-2.jpg') }}" alt=""></div>
-            <!--  About Content  -->
-            <div class="col-lg-7 col-12">
-                <h2>Who We Are</h2>
-                <div>
-                    <h2 class="fw-bold">The African Climate Health & Environmental Alliance (ACHEA)</h2>
+            <div class="col-lg-6 col-12 mb-30">
+                <div class="about-image-2" style="position: relative; border-radius: 10px; overflow: hidden; box-shadow: 0 20px 40px rgba(0,0,0,0.1);">
+                    <img src="{{ asset('img/about/solar-environmental.png') }}" alt="ACHEA Team" style="width: 100%; height: auto; display: block; transition: transform 0.5s ease;">
                 </div>
-                <p> is a non-profit organization dedicated to building climate-resilient health systems across Africa. We operate at the intersection of climate change and public health, recognizing that a warming planet poses fundamental threats to human well-being—from vector-borne diseases to food insecurity and heat stress.</p>
-                <p>Our mission is to empower communities, health professionals, and policymakers with the tools, knowledge, and infrastructure needed to adapt to a changing climate. By integrating climate-smart solutions into health systems, we aim to safeguard the most vulnerable populations, particularly women and children, from environmental health risks.</p>
-                <div class="btns text-white">
-                    <a href="#" class="button black">JOIN NOW</a>
-                    <a href="#" class="button">view details</a>
+            </div>
+            <!--  About Content  -->
+            <div class="col-lg-6 col-12 mb-30">
+                <div class="about-content-2" style="padding-left: 30px;">
+                    <span style="display: block; color: #ff9f6f; font-weight: 700; text-transform: uppercase; letter-spacing: 2px; margin-bottom: 10px;">Who We Are</span>
+                    <h2 style="font-size: 36px; font-weight: 800; line-height: 1.3; margin-bottom: 25px; color: #333;">The African Climate Health & <br><span style="color: #ff9f6f;">Environmental Alliance</span></h2>
+                    
+                    <p style="font-size: 16px; line-height: 1.8; color: #666; margin-bottom: 20px;">
+                        ACHEA is a non-profit organization dedicated to building climate-resilient health systems across Africa. We operate at the intersection of climate change and public health, recognizing that a warming planet poses fundamental threats to human well-being—from vector-borne diseases to food insecurity and heat stress.
+                    </p>
+                    <p style="font-size: 16px; line-height: 1.8; color: #666; margin-bottom: 35px;">
+                        Our mission is to empower communities, health professionals, and policymakers with the tools, knowledge, and infrastructure needed to adapt to a changing climate. By integrating climate-smart solutions into health systems, we aim to safeguard the most vulnerable populations, particularly women and children.
+                    </p>
                 </div>
             </div>
         </div>
@@ -42,32 +47,79 @@
 </div>
 <!-- About Area End -->
 
+<!-- Mission & Vision Area Start -->
+<div id="mission-vision-area" class="mission-vision-area section py-30" style="background-color: #fff;">
+    <div class="container">
+        <div class="row">
+            <!-- Mission -->
+            <div class="col-lg-6 col-12 mb-40">
+                <div class="mission-vision-item card py-4 px-8">
+                    <div class="icon" style="font-size: 40px; color: #ff9f6f; margin-bottom: 20px;">
+                        <i class="fa fa-bullseye"></i>
+                    </div>
+                    <h3 style="font-size: 28px; font-weight: 700; margin-bottom: 15px; color: #333;">Our Mission</h3>
+                    <p style="font-size: 16px; line-height: 1.8; color: #666;">
+                        To build climate-resilient health systems across Africa by empowering communities, health professionals, and policymakers with the tools, knowledge, and infrastructure needed to adapt to a changing climate.
+                    </p>
+                </div>
+            </div>
+            <!-- Vision -->
+            <div class="col-lg-6 col-12 mb-40">
+                <div class="mission-vision-item card py-4 px-8">
+                    <div class="icon" style="font-size: 40px; color: #ff9f6f; margin-bottom: 20px;">
+                        <i class="fa fa-eye"></i>
+                    </div>
+                    <h3 style="font-size: 28px; font-weight: 700; margin-bottom: 15px; color: #333;">Our Vision</h3>
+                    <p style="font-size: 16px; line-height: 1.8; color: #666;">
+                        An Africa where sustainable development and environmental stewardship ensure that every community thrives in a healthy, climate-resilient future, free from the threats of environmental degradation.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Mission & Vision Area End -->
+
 <!-- Service Area Start -->
-<div id="service-area" class="service-area section pb-120">
+<div id="service-area" class="service-area section pb-90 pt-100">
     <div class="container">
         <div class="row">
             <div class="section-title text-center col-12 mb-80">
-                <h2>Our Core Programs</h2>
+                <span style="display: block; color: #ff9f6f; font-weight: 700; text-transform: uppercase; letter-spacing: 2px; margin-bottom: 10px;">What We Do</span>
+                <h2 style="font-size: 42px; font-weight: 800; color: #333;">Our Core Programs</h2>
+                <p style="max-width: 700px; margin: 20px auto 0; color: #666;">We implement targeted interventions to address the most critical intersectional challenges.</p>
             </div>
         </div>
         <div class="row">
             <!--  Single Service  -->
-            <div class="single-service text-center col-lg-4 col-md-6 col-12">
-                <img src="{{ asset('img/service/1.png') }}" alt="">
-                <h4>Climate-Smart Maternal Clinics</h4>
-                <p>We retrofit rural health facilities with solar power, rainwater harvesting, and sustainable waste management to ensure continuous care for mothers and newborns, even during extreme weather events.</p>
+            <div class="col-lg-4 col-md-6 col-12 mb-30">
+                <div class="single-service text-center" style="background: #fff; padding: 40px 30px; border-radius: 10px; box-shadow: 0 10px 30px rgba(0,0,0,0.05); transition: all 0.3s ease; height: 100%; border-bottom: 3px solid transparent;">
+                    <div style="width: 80px; height: 80px; margin: 0 auto 25px; display: flex; align-items: center; justify-content: center; background: rgba(255, 159, 111, 0.1); border-radius: 50%;">
+                        <img src="{{ asset('img/service/1.png') }}" alt="" style="max-width: 40px;">
+                    </div>
+                    <h4 style="font-weight: 700; font-size: 20px; margin-bottom: 15px; color: #333;">Climate-Smart Clinics</h4>
+                    <p style="color: #666; line-height: 1.7;">We retrofit rural health facilities with solar power, rainwater harvesting, and sustainable waste management to ensure continuous care.</p>
+                </div>
             </div>
             <!--  Single Service  -->
-            <div class="single-service text-center col-lg-4 col-md-6 col-12">
-                <img src="{{ asset('img/service/2.png') }}" alt="">
-                <h4>WASH for Safe Motherhood</h4>
-                <p>We implement water, sanitation, and hygiene (WASH) infrastructure in healthcare centers to prevent infections and reduce maternal and neonatal mortality.</p>
+            <div class="col-lg-4 col-md-6 col-12 mb-30">
+                <div class="single-service text-center" style="background: #fff; padding: 40px 30px; border-radius: 10px; box-shadow: 0 10px 30px rgba(0,0,0,0.05); transition: all 0.3s ease; height: 100%; border-bottom: 3px solid transparent;">
+                    <div style="width: 80px; height: 80px; margin: 0 auto 25px; display: flex; align-items: center; justify-content: center; background: rgba(255, 159, 111, 0.1); border-radius: 50%;">
+                        <img src="{{ asset('img/service/2.png') }}" alt="" style="max-width: 40px;">
+                    </div>
+                    <h4 style="font-weight: 700; font-size: 20px; margin-bottom: 15px; color: #333;">WASH for Motherhood</h4>
+                    <p style="color: #666; line-height: 1.7;">We implement water, sanitation, and hygiene (WASH) infrastructure in healthcare centers to prevent infections and reduce mortality.</p>
+                </div>
             </div>
             <!--  Single Service  -->
-            <div class="single-service text-center col-lg-4 col-md-6 col-12">
-                <img src="{{ asset('img/service/3.png') }}" alt="">
-                <h4>Community Resilience & Advocacy</h4>
-                <p>We train community health workers on climate-health risks and advocate for policies that prioritize environmental health at the national and regional levels.</p>
+            <div class="col-lg-4 col-md-6 col-12 mb-30">
+                <div class="single-service text-center" style="background: #fff; padding: 40px 30px; border-radius: 10px; box-shadow: 0 10px 30px rgba(0,0,0,0.05); transition: all 0.3s ease; height: 100%; border-bottom: 3px solid transparent;">
+                    <div style="width: 80px; height: 80px; margin: 0 auto 25px; display: flex; align-items: center; justify-content: center; background: rgba(255, 159, 111, 0.1); border-radius: 50%;">
+                        <img src="{{ asset('img/service/3.png') }}" alt="" style="max-width: 40px;">
+                    </div>
+                    <h4 style="font-weight: 700; font-size: 20px; margin-bottom: 15px; color: #333;">Community Resilience</h4>
+                    <p style="color: #666; line-height: 1.7;">We train community health workers on climate-health risks and advocate for policies that prioritize environmental health.</p>
+                </div>
             </div>
         </div>
     </div>
@@ -75,14 +127,17 @@
 <!-- Service Area End -->
 
 <!-- Volunteer Area Start -->
-<div id="volunteer-area" class="volunteer-area section pt-120 pb-70">
+<div id="volunteer-area" class="volunteer-area section pt-120 pb-120" style="background: #222; position: relative;">
     <div class="container">
         <!-- Section Title -->
-        <div class="row">
-            <div class="section-title white text-center col-12 mb-80">
-                <h2>PARTNERS & COLLABORATION</h2>
-                <p style="color: #fff;">ACHEA believes that sustainable impact is achieved through strong partnerships. We collaborate with governments, development partners, health institutions, climate networks, and community organizations to scale integrated solutions.</p>
-                <p style="color: #fff;">Our partnership approach focuses on shared goals, local ownership, and evidence-based interventions that strengthen health systems, protect the environment, and improve lives across Africa.</p>
+        <div class="row justify-content-center">
+            <div class="section-title text-center col-lg-8 col-12 mb-50">
+                <h2 style="color: #fff; font-size: 36px; margin-bottom: 20px;">Partners & Collaboration</h2>
+                <div style="width: 60px; height: 3px; background: #ff9f6f; margin: 0 auto 30px;"></div>
+                <p style="color: #aaa; font-size: 18px; line-height: 1.8;">ACHEA believes that sustainable impact is achieved through strong partnerships. We collaborate with governments, development partners, health institutions, climate networks, and community organizations to scale integrated solutions.</p>
+                <p style="color: #aaa; font-size: 18px; line-height: 1.8; margin-top: 20px;">Our partnership approach focuses on shared goals, local ownership, and evidence-based interventions that strengthen health systems, protect the environment, and improve lives across Africa.</p>
+                
+                <a href="#" class="text-white" style="display: inline-block; margin-top: 40px; border: 2px solid #ff9f6f; color: #ff9f6f; padding: 12px 35px; border-radius: 30px; font-weight: 600; text-transform: uppercase; transition: all 0.3s ease;">Become a Partner</a>
             </div>
         </div>
     </div>

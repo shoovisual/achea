@@ -2,6 +2,25 @@
 @section('title', 'Home')
 @section('content')
     @include('components.hero-section')
+    <div id="about-area" class="about-area bg-dark section">
+            <!--  About Image  -->
+            <div class="about-image"><img src="img/about/about.jpg" alt="Image"></div>
+            <div class="container">
+                <div class="row">
+                    <!--  About Content  -->
+                    <div class="about-content col-lg-6 col-12 ms-auto py-20">
+                        <h2>Who we are</h2>
+                        <h1>The African Climate Health & Environmental Alliance (ACHEA)</h1>
+                        <div>
+                            <p class="text-white">is a non-profit organization dedicated to building climate-resilient health systems across Africa. We operate at the intersection of climate change and public health, recognizing that a warming planet poses fundamental threats to human well-being—from vector-borne diseases to food insecurity and heat stress.</p>
+                            <p class="text-white">a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more</p>
+                        </div>
+                        <a href="#" class="button white">JOIN NOW</a>
+                        <a href="#" class="button text-white">view details</a>
+                    </div>
+                </div>
+            </div>
+        </div>
         <!-- About Area End -->
         <!-- Key Pillars Area Start -->
         <div id="pillars-area" class="section pt-120 pb-90">
@@ -9,7 +28,6 @@
                 <div class="row">
                     <div class="section-title text-center col-12 mb-80">
                         <h2>KEY PILLARS</h2>
-                        <p style="max-width: 800px; margin: 0 auto;">At ACHEA, We believe that Africa's most pressing challenges are interconnected. Climate change exacerbates health risks, and environmental degradation undermines livelihoods and wellbeing. Our mission is to integrate, innovate, and implement solutions that address these issues holistically.</p>
                     </div>
                 </div>
                 <div class="row">
