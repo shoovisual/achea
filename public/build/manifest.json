@@ -48,6 +48,15 @@
       "app.css"
     ]
   },
+  "resources/css/plugins.css": {
+    "file": "assets/plugins-BaF9LhS8.css",
+    "src": "resources/css/plugins.css",
+    "isEntry": true,
+    "name": "plugins",
+    "names": [
+      "plugins.css"
+    ]
+  },
   "resources/css/style.css": {
     "file": "assets/style-CDveFm7c.css",
     "src": "resources/css/style.css",
@@ -93,6 +102,7 @@
     "file": "assets/plugins-B9KXQtDU.js",
     "name": "plugins",
     "src": "resources/js/plugins.js",
+    "isEntry": true,
     "isDynamicEntry": true
   }
 }
