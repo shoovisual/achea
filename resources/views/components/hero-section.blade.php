@@ -10,7 +10,7 @@
             <div class="row">
                 <!-- Hero Content -->
                 <div class="hero-content-2 col-12">
-                    <h1 class="wow cusFadeInUp" data-wow-duration=".5s" data-wow-delay="0.5s">Building Africa's Resilience at the Nexus of Climate, Health, and Environment.
+                    <h1 class="wow cusFadeInUp" data-wow-duration=".5s" data-wow-delay="0.5s">Building Africa's Climate, and Environment Resilience.
                     </h1>
                     <p class="wow cusFadeInUp" data-wow-duration=".5s" data-wow-delay="1s">We champion integrated, community-led solutions to the interconnected crises of climate change, environmental degradation, and public health across the African continent.</p>
                     <a href="{{ route('about') }}" class="learn-more wow cusFadeInRight" data-wow-duration=".5s" data-wow-delay="1.5s">Learn More</a>

@@ -41,7 +41,7 @@
                                     <li><a href="{{ route('home') }}">HOME</a></li>
                                     <li><a href="{{ route('about') }}">ABOUT US</a></li>
                                     <li><a href="#">PROGRAM</a></li>
-                                    <li><a href="#">PROJECTS</a></li>
+                                    <li><a href="{{ route('projects.index') }}">PROJECTS</a></li>
                                     <li><a href="{{ route('contact') }}">CONTACT US</a></li>
                                 </ul>
                             </nav>

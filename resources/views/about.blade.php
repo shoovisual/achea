@@ -3,19 +3,7 @@
 
 @section('content')
 
-<div class="page-banner-area section overlay gradient" style="background-image: url('{{ asset('img/hero/1.jpg') }}');">
-    <div class="container">
-        <div class="row">
-            <div class="page-banner col-12">
-                <h2>ABOUT US</h2>
-                <ul class="p-0 text-white">
-                    <li><a href="{{ route('home') }}">HOME</a></li>
-                    <li><a href="#">about</a></li>
-                </ul>
-            </div>
-        </div>
-    </div>
-</div>
+@include('components.header')
 <!-- Page Banner Area End -->
 
 <!-- About Area Start -->
@@ -33,7 +21,7 @@
                 <div class="about-content-2" style="padding-left: 30px;">
                     <span style="display: block; color: #ff9f6f; font-weight: 700; text-transform: uppercase; letter-spacing: 2px; margin-bottom: 10px;">Who We Are</span>
                     <h2 style="font-size: 36px; font-weight: 800; line-height: 1.3; margin-bottom: 25px; color: #333;">The African Climate Health & <br><span style="color: #ff9f6f;">Environmental Alliance</span></h2>
-                    
+
                     <p style="font-size: 16px; line-height: 1.8; color: #666; margin-bottom: 20px;">
                         ACHEA is a non-profit organization dedicated to building climate-resilient health systems across Africa. We operate at the intersection of climate change and public health, recognizing that a warming planet poses fundamental threats to human well-being—from vector-borne diseases to food insecurity and heat stress.
                     </p>
@@ -126,6 +114,8 @@
 </div>
 <!-- Service Area End -->
 
+@include('components.integrated-solutions')
+
 <!-- Volunteer Area Start -->
 <div id="volunteer-area" class="volunteer-area section pt-120 pb-120" style="background: #222; position: relative;">
     <div class="container">
@@ -136,7 +126,7 @@
                 <div style="width: 60px; height: 3px; background: #ff9f6f; margin: 0 auto 30px;"></div>
                 <p style="color: #aaa; font-size: 18px; line-height: 1.8;">ACHEA believes that sustainable impact is achieved through strong partnerships. We collaborate with governments, development partners, health institutions, climate networks, and community organizations to scale integrated solutions.</p>
                 <p style="color: #aaa; font-size: 18px; line-height: 1.8; margin-top: 20px;">Our partnership approach focuses on shared goals, local ownership, and evidence-based interventions that strengthen health systems, protect the environment, and improve lives across Africa.</p>
-                
+
                 <a href="#" class="text-white" style="display: inline-block; margin-top: 40px; border: 2px solid #ff9f6f; color: #ff9f6f; padding: 12px 35px; border-radius: 30px; font-weight: 600; text-transform: uppercase; transition: all 0.3s ease;">Become a Partner</a>
             </div>
         </div>

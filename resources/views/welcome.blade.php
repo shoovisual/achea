@@ -8,15 +8,19 @@
             <div class="container">
                 <div class="row">
                     <!--  About Content  -->
-                    <div class="about-content col-lg-6 col-12 ms-auto py-20">
-                        <h2>Who we are</h2>
-                        <h1>The African Climate Health & Environmental Alliance (ACHEA)</h1>
-                        <div>
-                            <p class="text-white">is a non-profit organization dedicated to building climate-resilient health systems across Africa. We operate at the intersection of climate change and public health, recognizing that a warming planet poses fundamental threats to human well-being—from vector-borne diseases to food insecurity and heat stress.</p>
-                            <p class="text-white">a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more</p>
+                    <div class="col-lg-6 col-12 ms-auto py-20">
+                        <div class="px-10">
+                            <h2 class="text-white fw-light">Who we are</h2>
+                            <h1 class="text-white fw-bold">The African Climate Health & Environmental Alliance (ACHEA)</h1>
+                            <div class="about-content mb-3">
+                                <p class="text-white">is a non-profit organization dedicated to building climate-resilient health systems across Africa. We operate at the intersection of climate change and public health, recognizing that a warming planet poses fundamental threats to human well-being—from vector-borne diseases to food insecurity and heat stress.</p>
+                                <p class="text-white">a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more</p>
+                            </div>
+                            <div class="d-flex gap-3">
+                                <a href="#" class="btn btn-light rounded-0 px-3">DONATE NOW</a>
+                                <a href="#" class="btn btn-outline-light rounded-0 px-3 text-white">CONTACT US</a>
+                            </div>
                         </div>
-                        <a href="#" class="button white">JOIN NOW</a>
-                        <a href="#" class="button text-white">view details</a>
                     </div>
                 </div>
             </div>
@@ -80,37 +84,47 @@
         </div>
         <!-- Crisis Intersection Statement Area End -->
         <!-- Crisis Circles Area Start -->
-        <div id="service-area" class="service-area section pt-120 pb-120">
-            <div class="container">
+        <div id="service-area" class="service-area section py-50 px-3">
+            <div class="container-fluid">
                 <!-- Section Title -->
                 <div class="row">
                     <div class="section-title text-center col-12 mb-80">
-                        <h2>Three Interconnected Circles</h2>
+                        <h2>Key Focus Areas</h2>
                     </div>
                 </div>
                 @php
                      $services = [
                         [
                             'image' => 'img/service/1.png',
-                            'title' => 'Climate Impacts',
-                            'description' => 'Heat stress, floods, droughts, vector-borne diseases'
+                            'title' => 'Healthcare Infrastructure',
+                            'description' => 'Infrastructure development in the primary healthcare for climate-resilient health services.'
                         ],
                         [
                             'image' => 'img/service/2.png',
-                            'title' => 'WASH Crisis',
-                            'description' => 'Contaminated water, poor sanitation, hygiene gaps in clinics'
+                            'title' => 'Resilient Development',
+                            'description' => 'Advance climate-resilient infrastructure development in primary health care facilities to safeguard service delivery, enhance adaptive capacity and ensure sustained access to essential health services under changing climatic conditions.'
                         ],
                         [
                             'image' => 'img/service/3.png',
-                            'title' => 'Maternal/Neonatal Health',
-                            'description' => 'Infection risks, preterm births, delivery complications'
+                            'title' => 'Energy Efficiency',
+                            'description' => 'Energy Efficiency as a new energy source for climate resilience.'
+                        ],
+                        [
+                            'image' => 'img/service/1.png',
+                            'title' => 'Inclusive Engagement',
+                            'description' => 'Promote inclusive, multi-stakeholder engagement to address critical climate change impacts on health, ensure continuity of essential health services, strengthen public health adaptation measures and advance sustainable energy management across the public sector.'
+                        ],
+                        [
+                            'image' => 'img/service/2.png',
+                            'title' => 'Maternal Health',
+                            'description' => 'Strengthen climate-resilient maternal health services through WASH upgrades, clean energy access, heat risk management and targeted vulnerability surveillance.'
                         ],
                     ];
                 @endphp
                 <!-- Services -->
                 <div class="row">
                     @foreach ($services as $service)
-                        <div class="single-service text-center col-lg-4 d-flex flex-column col-md-6 col-12 justify-content-center align-items-center mb-30">
+                        <div class="single-service text-center col-lg d-flex flex-col align-items-center mb-30">
                             <img src="{{ asset($service['image']) }}" alt="{{ $service['title'] }}" width="50">
                             <h4 class="text-lg">{{ $service['title'] }}</h4>
                             <p>{{ $service['description'] }}</p>
@@ -121,50 +135,7 @@
         </div>
         <!-- Crisis Circles Area End -->
         <!-- Integrated Solutions Area Start -->
-        <div id="solutions-area" class="section bg-gray pt-120 pb-90">
-            <div class="container">
-                <div class="row">
-                    <div class="section-title text-center col-12 mb-80">
-                        <h2>Our Integrated Solutions</h2>
-                    </div>
-                </div>
-                <div class="row">
-                    <!-- Solution 1 -->
-                    <div class="col-lg-4 col-md-6 col-12 mb-30">
-                        <div class="single-project text-center" style="background: #fff; padding: 40px 30px; height: 100%; box-shadow: 0 10px 30px rgba(0,0,0,0.05); border-radius: 8px; transition: all 0.3s ease;">
-                            <div class="icon" style="font-size: 50px; color: #ff9f6f; margin-bottom: 25px;">
-                                <i class="fa fa-sun-o"></i>
-                            </div>
-                            <h4 style="font-weight: 700; margin-bottom: 15px; font-size: 20px;">Climate-Smart Maternal Clinics</h4>
-                            <p style="margin-bottom: 20px; color: #666;">Solar-powered, water-secure, and heat-resilient facilities ensuring safe deliveries even in extreme weather.</p>
-                            <a href="#" style="color: #ff9f6f; font-weight: 600; text-transform: uppercase; font-size: 14px; letter-spacing: 1px;">Learn More <i class="fa fa-angle-right ml-1"></i></a>
-                        </div>
-                    </div>
-                    <!-- Solution 2 -->
-                    <div class="col-lg-4 col-md-6 col-12 mb-30">
-                        <div class="single-project text-center" style="background: #fff; padding: 40px 30px; height: 100%; box-shadow: 0 10px 30px rgba(0,0,0,0.05); border-radius: 8px; transition: all 0.3s ease;">
-                            <div class="icon" style="font-size: 50px; color: #ff9f6f; margin-bottom: 25px;">
-                                <i class="fa fa-tint"></i>
-                            </div>
-                            <h4 style="font-weight: 700; margin-bottom: 15px; font-size: 20px;">WASH for Safe Motherhood</h4>
-                            <p style="margin-bottom: 20px; color: #666;">Clean birth kits, community water management, and sanitation to prevent infections and ensure hygiene.</p>
-                            <a href="#" style="color: #ff9f6f; font-weight: 600; text-transform: uppercase; font-size: 14px; letter-spacing: 1px;">Learn More <i class="fa fa-angle-right ml-1"></i></a>
-                        </div>
-                    </div>
-                    <!-- Solution 3 -->
-                    <div class="col-lg-4 col-md-6 col-12 mb-30">
-                        <div class="single-project text-center" style="background: #fff; padding: 40px 30px; height: 100%; box-shadow: 0 10px 30px rgba(0,0,0,0.05); border-radius: 8px; transition: all 0.3s ease;">
-                            <div class="icon" style="font-size: 50px; color: #ff9f6f; margin-bottom: 25px;">
-                                <i class="fa fa-users"></i>
-                            </div>
-                            <h4 style="font-weight: 700; margin-bottom: 15px; font-size: 20px;">Community Resilience Programs</h4>
-                            <p style="margin-bottom: 20px; color: #666;">Empowering women through early warning systems, emergency transport, and climate adaptation groups.</p>
-                            <a href="#" style="color: #ff9f6f; font-weight: 600; text-transform: uppercase; font-size: 14px; letter-spacing: 1px;">Learn More <i class="fa fa-angle-right ml-1"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+        @include('components.integrated-solutions')
         <!-- Integrated Solutions Area End -->
         <!-- Video Area Start -->
         <div id="video-area" class="video-area section overlay py-30" style="position: relative; background-attachment: fixed;">

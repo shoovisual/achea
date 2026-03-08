@@ -4,21 +4,7 @@
 
 @section('content')
 
-<!-- Page Banner Area Start -->
-<div class="page-banner-area section overlay gradient" style="background-image: url('{{ asset('img/hero/1.jpg') }}');">
-    <div class="container">
-        <div class="row">
-            <div class="page-banner col-12">
-                <h2>CONTACT US</h2>
-                <ul class="p-0 text-white">
-                    <li><a href="{{ route('home') }}">HOME</a></li>
-                    <li><a href="{{ route('contact') }}">contact</a></li>
-                </ul>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- Page Banner Area End -->
+@include('components.header')
 
 <!-- Contact Area Start -->
 <div id="contact-area" class="contact-area section pt-120 pb-120" style="background-color: #f5f5f5;">
@@ -29,7 +15,7 @@
                     <h2 style="font-weight: 700; color: #444; font-size: 36px; margin-bottom: 50px;">Contact Us</h2>
                 </div>
             </div>
-            
+
             <div class="row align-items-center">
                 <!-- Contact Info -->
                 <div class="col-lg-5 offset-lg-1 col-md-6 col-12 mb-50">
@@ -39,31 +25,31 @@
                         </div>
                         <div class="content">
                             <h4 style="font-size: 18px; font-weight: 700; color: #333; margin-bottom: 5px;">Call</h4>
-                            <p style="color: #666; font-size: 15px; margin: 0;">084524145547</p>
+                            <p style="color: #666; font-size: 15px; margin: 0;">+255 713 130 507</p>
                         </div>
                     </div>
-                    
+
                     <div class="contact-info-item mb-40 d-flex align-items-start">
                         <div class="icon" style="min-width: 50px; height: 50px; line-height: 50px; text-align: center; border-radius: 50%; color: #ff9f6f; font-size: 24px; margin-right: 20px;">
                             <i class="fa fa-envelope-o"></i>
                         </div>
                         <div class="content">
                             <h4 style="font-size: 18px; font-weight: 700; color: #333; margin-bottom: 5px;">Email</h4>
-                            <p style="color: #666; font-size: 15px; margin: 0;">loremipsum@gmail.com</p>
+                            <p style="color: #666; font-size: 15px; margin: 0;">info@achea.or.tz</p>
                         </div>
                     </div>
-                    
+
                     <div class="contact-info-item d-flex align-items-start">
                         <div class="icon" style="min-width: 50px; height: 50px; line-height: 50px; text-align: center; border-radius: 50%; color: #ff9f6f; font-size: 24px; margin-right: 20px;">
                             <i class="fa fa-map-marker"></i>
                         </div>
                         <div class="content">
                             <h4 style="font-size: 18px; font-weight: 700; color: #333; margin-bottom: 5px;">Location</h4>
-                            <p style="color: #666; font-size: 15px; margin: 0;">Bandung, Indonesia</p>
+                            <p style="color: #666; font-size: 15px; margin: 0;">Dar es Salaam, Tanzania</p>
                         </div>
                     </div>
                 </div>
-                
+
                 <!-- Contact Form -->
                 <div class="col-lg-5 col-md-6 col-12">
                     <div class="contact-form">
