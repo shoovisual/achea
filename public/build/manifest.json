@@ -40,7 +40,7 @@
     "src": "node_modules/material-design-iconic-font/dist/fonts/Material-Design-Iconic-Font.woff2"
   },
   "resources/css/app.css": {
-    "file": "assets/app-CKSZOppM.css",
+    "file": "assets/app-D_KjRp8e.css",
     "src": "resources/css/app.css",
     "isEntry": true,
     "name": "app",
@@ -58,7 +58,7 @@
     ]
   },
   "resources/css/style.css": {
-    "file": "assets/style-CDveFm7c.css",
+    "file": "assets/style-C23yVldE.css",
     "src": "resources/css/style.css",
     "isEntry": true,
     "name": "style",
